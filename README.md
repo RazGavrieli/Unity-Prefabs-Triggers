@@ -1,8 +1,8 @@
 # Unity week 2: Formal elements
 
-The game can be played at: https://ggm-gamedev.itch.io/asteroids <br>
+* [Play the game on itch](https://ggm-gamedev.itch.io/asteroids)
 <br>
-This game was edited by me (Raz Gavrieli), original game by Erel Segal-Halevi. <br> 
+This game was edited by me (Raz Gavrieli), original game by Erel Segal-Halevi. <br>
 I've added audio components, an additional - more difficult - level, improved sprites, life system (HP), and win\lose screen. <br>
 
 
