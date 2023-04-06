@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/4-levels/level-1.unity
     guid: 7b9c106c66bcfde438f75b0322428201
   - enabled: 1
+    path: Assets/Scenes/4-levels/level-2.unity
+    guid: c37b2e1f8ac62430f98ca249b60ab08b
+  - enabled: 1
     path: Assets/Scenes/4-levels/youwin.unity
     guid: 746da71bf020a504bb92b7b3fd74cf3e
   - enabled: 1
-    path: Assets/Scenes/2-prefabs/b-instantiate.unity
-    guid: 2e934fb2f71798c4caddce2e03fed046
+    path: Assets/Scenes/4-levels/youdied.unity
+    guid: 56160844665a84e0bbb5c25c869c760e
   m_configObjects: {}

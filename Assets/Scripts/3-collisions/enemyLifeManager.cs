@@ -12,13 +12,18 @@ public class enemyLifeManager : MonoBehaviour {
     [SerializeField] public int life;
 
 
+
     private void OnTriggerEnter2D(Collider2D other) {
+
         if (other.tag == enemyTag && enabled && life == 1) {
             life--;
-            Destroy(this.gameObject);
+
             Destroy(other.gameObject);
+            Destroy(this.gameObject);
+
         } else if (other.tag == enemyTag && enabled) {
             life--;
+
             Destroy(other.gameObject);
         } 
     }

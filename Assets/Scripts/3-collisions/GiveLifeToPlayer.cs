@@ -10,7 +10,7 @@ public class GiveLifeToPlayer : MonoBehaviour {
             Debug.Log("Shield triggered by player");
             other.GetComponent<DestroyOnTrigger2D>().life += amountOfLifes;
             other.GetComponent<DestroyOnTrigger2D>().lifeField.SetNumber(other.GetComponent<DestroyOnTrigger2D>().life);
-            Destroy(gameObject);  // Destroy the shield itself - prevent double-use
+            Destroy(gameObject);  // Destroy the life icon itself - prevent double-use
         } else {
             Debug.Log("Shield triggered by "+other.name);
         }

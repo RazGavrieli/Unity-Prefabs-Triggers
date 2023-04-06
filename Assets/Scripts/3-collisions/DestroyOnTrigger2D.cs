@@ -13,16 +13,20 @@ public class DestroyOnTrigger2D : MonoBehaviour {
     [SerializeField] string youDiedScene;
     [SerializeField] public int life;
     [SerializeField] public NumberField lifeField;
-
+    [SerializeField] AudioSource explosion;
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == enemyTag && enabled && life == 1) {
+            explosion.Play();
             life--;
             lifeField.SetNumber(life);
+            SceneManager.LoadScene(youDiedScene);
+
             Destroy(this.gameObject);
             Destroy(other.gameObject);
-            SceneManager.LoadScene(youDiedScene);
         } else if (other.tag == enemyTag && enabled) {
+            explosion.Play();
+
             life--;
             lifeField.SetNumber(life);
             Destroy(other.gameObject);

@@ -6,9 +6,12 @@
  */
 public class LaserShooter: ClickSpawner {
     [SerializeField] NumberField scoreField;
+    [SerializeField] AudioSource bang;
+
 
     protected override GameObject spawnObject() {
         GameObject newObject = base.spawnObject();  // base = super
+        bang.Play();
 
         // Modify the text field of the new object.
         ScoreAdder newObjectScoreAdder = newObject.GetComponent<ScoreAdder>();
